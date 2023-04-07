@@ -1,0 +1,17 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Read the CSV file into a pandas DataFrame
+df = pd.read_csv('https://data.wprdc.org/dataset/853a077d-0a31-4292-8a1d-5d60b530169b/resource/b90ccee1-c0aa-43b9-93e2-8a25e690c393/download/sidewalkstreetratioupload.csv')
+# Create a scatterplot
+df.plot(kind='scatter', x='SidewalkStepLFt', y='StreetLFt', alpha=0.5)
+
+# Set the title and axis labels
+plt.title('Sidewalk Score vs. Street Score')
+plt.xlabel('Sidewalk Score')
+plt.ylabel('Street Score')
+
+# Show the plot
+plt.show()
+
+#sidewalk condition to street condition
